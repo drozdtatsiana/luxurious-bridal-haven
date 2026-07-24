@@ -42,7 +42,7 @@ body {
     &__lang {
         display: flex;
 
-        &--active {
+        &-link--active {
             @extend %opensans-700;
         }
     }
@@ -117,7 +117,6 @@ body {
         width: 250px;
         position: relative;
     }
-
     &__form-input {
         display: block;
         width: 100%;
@@ -174,14 +173,6 @@ body {
 
 .top {
     min-height: 90vh;
-    // background-image: image-set(url('../images/top-bg.avif') type('image/avif'),
-    //         url('../images/top-bg.webp') type('image/webp'),
-    //         url('../images/top-bg.jpg'),
-    //     );
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-
     &__inner {
 
         display: flex;
@@ -196,12 +187,10 @@ body {
     }
 
     &__title {
-
         @extend %lora-400;
         font-size: 80px;
         line-height: 1.2;
         margin-bottom: 60px;
-
     }
 
     &__link {
@@ -213,3 +202,69 @@ body {
         border-radius: 3px;
     }
 }
+
+.new-collection {
+     background-image: url('../images/new-collection-decor.svg');
+    background-repeat: no-repeat;
+    background-position: 240px -40%;
+  &__inner {
+    max-width: 1200px;
+     padding: 150px 30px;
+     display: flex;
+     gap: 40px;
+  }
+
+  &__content {
+     padding-top: 75px;
+     display: flex;
+     flex-direction: column;
+     max-width: 420px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 45px;
+    @extend %lora-400;
+  }
+  &__text {
+    color: vars.$text-muted;
+  }
+  &__text + .new-collection__text {
+margin-top: 25px;
+
+  }
+  
+   &__btn {
+    display: inline-block;
+     padding: 10px 65px;
+    color: vars.$text-muted;
+    font-size: 16px;
+    border: 1px solid vars.$text-muted;
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  &__img {
+    padding-top: 75px;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+     padding-bottom: 40px;
+  }
+  &__box-img {
+    position: absolute;
+    top: 0;
+    left: -115px;
+    max-width: fit-content;
+  }
+  &__caption {
+    max-width: 290px;
+    color: vars.$text-muted;
+    margin-top: auto;
+  }
+}
+
+
+
+
