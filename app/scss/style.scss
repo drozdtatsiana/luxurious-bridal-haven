@@ -331,3 +331,58 @@ body {
     font-size: 11px;
   }
 }
+
+.designer {
+    padding: 150px 0 230px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  &__content {
+    max-width: 404px;
+  }
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    color: vars.$text-accent;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: vars.$text-muted;
+  }
+  &__text + .designer__text {
+    margin-top: 25px;
+  }
+  &__box {
+    position: relative;
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 40px;
+  }
+  &__caption {
+    position: absolute;
+    top: 188px;
+    left: -160px;
+     @extend %lora-400;
+     color: vars.$text-primary;
+     background-color: #fff;
+     max-width: 296px;
+     border: 3px solid vars.$bg-primary;
+     padding: 20px 18px;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 93px;
+    border: 1px solid vars.$text-muted;
+    color: vars.$text-muted;
+  }
+}
