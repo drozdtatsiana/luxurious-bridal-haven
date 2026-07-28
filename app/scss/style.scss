@@ -335,8 +335,8 @@ body {
 }
 
 .designer {
-    padding: 150px 0 230px;
-    position: relative;
+  padding: 150px 0 230px;
+  position: relative;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -348,7 +348,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
-
   }
 
   &__content {
@@ -382,12 +381,12 @@ body {
     position: absolute;
     top: 188px;
     left: -160px;
-     @extend %lora-400;
-     color: vars.$text-primary;
-     background-color: #fff;
-     max-width: 296px;
-     border: 3px solid vars.$bg-primary;
-     padding: 20px 18px;
+    @extend %lora-400;
+    color: vars.$text-primary;
+    background-color: #fff;
+    max-width: 296px;
+    border: 3px solid vars.$bg-primary;
+    padding: 20px 18px;
   }
   &__link {
     display: inline-block;
@@ -399,30 +398,30 @@ body {
 }
 
 .our-advantages {
-    background-color: vars.$bg-primary;
-    &__wrapper{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-    }
-    &__img {
-        position: absolute;
-        bottom: 0;
-        left: 40px;
-        width: 100%;
-        max-width: fit-content;
-    }
+  background-color: vars.$bg-primary;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 100%;
+    max-width: fit-content;
+  }
 
-    &__inner {
-        position: relative;
-        padding: 64px 130px 34px 0;
-        margin-left: auto;
-    }
-    &__decor {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+  &__inner {
+    position: relative;
+    padding: 64px 130px 34px 0;
+    margin-left: auto;
+  }
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
   &__title {
     @extend %lora-400;
     font-size: 45px;
@@ -433,41 +432,41 @@ body {
   &__list {
     column-count: 2;
     column-gap: 80px;
-    
   }
   &__item {
     padding-left: 50px;
     margin-bottom: 30px;
     position: relative;
     &::before {
-        content: '';
-        position: absolute;
-        width: 30px;
-        height: 22px;
-        top: 1px;
-        left:0;
-        background-image: url('../images/list-decor.svg');
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      top: 1px;
+      left: 0;
+      background-image: url("../images/list-decor.svg");
     }
   }
 }
 
 .our-blog {
-    padding: 150px 0 100px;
+  padding: 150px 0 100px;
 
   &__inner {
     padding: 0 40px;
     display: grid;
     grid-template-columns: 1fr 280px 330px;
     grid-template-rows: 1fr 1fr;
-    gap:20px;
-    background-image: url('../images/our-blog-decor.svg');
+    gap: 20px;
+    background-image: url("../images/our-blog-decor.svg");
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
     background-position: bottom left 40px;
   }
-  &__content {}
+  &__content {
+  }
   &__title {
-     @extend %lora-400;
+    @extend %lora-400;
     font-size: 45px;
     color: vars.$text-accent;
     text-transform: uppercase;
@@ -480,28 +479,28 @@ body {
     margin-bottom: 50px;
   }
   &__btn-link {
-      display: inline-block;
+    display: inline-block;
     font-size: 16px;
     padding: 10px 93px;
     border: 1px solid vars.$text-muted;
     color: vars.$text-muted;
   }
- 
+
   &__img {
     width: 100%;
     max-width: fit-content;
   }
- 
+
   &__box-right {
     grid-row: span 2;
-   align-self: center;
-   margin-top: -90px;
+    align-self: center;
+    margin-top: -90px;
   }
-   &__link {
-      @extend %lora-400;
-      font-size: 20px;
-       color: vars.$text-muted;
-      margin-bottom: 5px;
+  &__link {
+    @extend %lora-400;
+    font-size: 20px;
+    color: vars.$text-muted;
+    margin-bottom: 5px;
   }
   &__box-date {
     @extend %opensans-300;
@@ -516,11 +515,11 @@ body {
 
 .appointment {
   padding: 50px 40px 130px;
-  background-image: url('../images/appointment-decor.svg');
-background-position: top 105px  center;
+  background-image: url("../images/appointment-decor.svg");
+  background-position: top 105px center;
   background-repeat: no-repeat;
   &__title {
-     @extend %lora-400;
+    @extend %lora-400;
     font-size: 45px;
     color: vars.$text-accent;
     text-transform: uppercase;
@@ -531,7 +530,7 @@ background-position: top 105px  center;
   &__box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:40px;
+    gap: 40px;
   }
 
   &__form {
@@ -541,7 +540,7 @@ background-position: top 105px  center;
   }
 
   &__form-title {
-      @extend %lora-400;
+    @extend %lora-400;
     font-size: 30px;
     color: vars.$text-accent;
     text-transform: uppercase;
@@ -563,7 +562,7 @@ background-position: top 105px  center;
     padding-bottom: 10px;
     margin-bottom: 20px;
     &::placeholder {
-     color: vars.$text-muted; 
+      color: vars.$text-muted;
     }
   }
 
@@ -580,5 +579,184 @@ background-position: top 105px  center;
   &__image {
     width: 100%;
     max-width: fit-content;
+  }
+}
+
+.collection-top {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.breadcrumbs {
+  padding: 30px 0 80px;
+  &__list {
+    display: flex;
+    gap: 14px;
+    color: vars.$text-muted;
+    font-size: 16px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item + .breadcrumbs__item::before {
+    content: "/";
+    position: absolute;
+    left: -9px;
+  }
+}
+
+.collections {
+  padding-bottom: 100px;
+  &__container {
+    position: relative;
+  }
+  &__decor {
+    position: absolute;
+    top: -225px;
+    right: -30px;
+    z-index: 5;
+  }
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    color: vars.$text-accent;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      "aa ab ba bb"
+      "cc cc ca cb"
+      "cc cc da db"
+      "ea eb ee ee"
+      "fa fb ee ee";
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    &:nth-child(1) {
+      grid-area: aa;
+    }
+    &:nth-child(2) {
+      grid-area: ab;
+    }
+    &:nth-child(3) {
+      grid-area: ba;
+    }
+    &:nth-child(4) {
+      grid-area: bb;
+    }
+    &:nth-child(5) {
+      grid-area: cc;
+      height: fit-content;
+    }
+    &:nth-child(6) {
+      grid-area: ca;
+    }
+    &:nth-child(7) {
+      grid-area: cb;
+    }
+    &:nth-child(8) {
+      grid-area: da;
+    }
+    &:nth-child(9) {
+      grid-area: db;
+    }
+    &:nth-child(10) {
+      grid-area: ea;
+      margin-top: -130px;
+      height: fit-content;
+    }
+    &:nth-child(11) {
+      grid-area: eb;
+      margin-top: -130px;
+      height: fit-content;
+    }
+    &:nth-child(12) {
+      grid-area: ee;
+      height: fit-content;
+    }
+    &:nth-child(13) {
+      grid-area: fa;
+    }
+    &:nth-child(14) {
+      grid-area: fb;
+    }
+  }
+  &__image {
+    width: 100%;
+    max-width: fit-content;
+    height: fit-content;
+  }
+  &__item-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    @extend %lora-400;
+    font-size: 20px;
+    color: #fff;
+    background-color: vars.$text-accent;
+  }
+  &__like {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+}
+
+.pagination {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: vars.$text-primary;
+  font-size: 16px;
+  gap: 2px;
+
+  &__list {
+    display: flex;
+    gap: 2px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link--active {
+    color: #fff;
+    background-color: vars.$text-muted;
+  }
+
+  &__arrow-disable {
+    display: none;
+  }
+
+  &__arrow {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
