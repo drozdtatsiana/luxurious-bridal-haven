@@ -1043,3 +1043,71 @@ body {
     right: 7px;
   }
 }
+
+.page-404 {
+  &__container {
+    max-width: 1560px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    margin: auto 10px 60px 35px;
+  }
+
+  &__title {
+    @extend %lora-400;
+    font-size: 160px;
+    color: vars.$text-accent;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 20px;
+    @extend %lora-400;
+    font-size: 48px;
+    color: vars.$text-accent;
+    text-transform: uppercase;
+    max-width: 731px;
+    align-items: flex-end;
+
+    span {
+      display: inline-block;
+      max-width: 620px;
+    }
+  }
+  
+  .moving {
+    opacity: 0.2;
+    overflow: hidden;
+
+    &__text {
+      @extend %lora-400;
+      font-size: 160px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      animation-name: moving;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  @keyframes moving {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
