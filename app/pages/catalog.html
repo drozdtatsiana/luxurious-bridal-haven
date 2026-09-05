@@ -1,0 +1,420 @@
+<!--=include head.html  -->
+<!--=include promo.html  -->
+<!--=include header.html  -->
+<main class="main">
+    <!--=include breadcrumbs.html  -->
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__top">
+                <div class="catalog__view-mode">
+                    View as
+                    <ul class="view-mode">
+                        <li class="view-mode__item">
+                            <button class="view-mode__btn view-mode__btn-grid">
+                                <svg width="20" height="20">
+                                    <use
+                                        xlink:href="images/sprite.svg#catalog-grid">
+                                    </use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="view-mode__item">
+                            <button class="view-mode__btn view-mode__btn-line">
+                                <svg width="20" height="20">
+                                    <use
+                                        xlink:href="images/sprite.svg#catalog-line">
+                                    </use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="catalog__title">
+                    WEDDING DRESSES
+                </h2>
+                <div class="catalog-sort">
+                    <form class="catalog-sort__form" action="#">
+                        <div class="catalog-sort__wrapper">
+                            <select class="catalog-sort__select" name="sort">
+                                <option value="selected disabled">Sort by
+                                    popularity</option>
+                                <option value="price">price</option>
+                                <option value="price">price</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <aside class="catalog__filter">
+                    <form action="#" class="catalog__filter-form">
+                        <div class="catalog__filterbox">
+                            <p class="catalog__filterbox-title">
+                                PRISE
+                            </p>
+                            <div class="catalog__filterbox-items--range">
+                                <div class="range">
+                                    <div class="range__inputs">
+                                        <label class="range__label">
+                                            <input class="range__min"
+                                                type="number" min="300"
+                                                max="3000" step="100">
+                                        </label>
+                                        -
+                                        <label class="range__label">
+                                            <input class="range__max"
+                                                type="number" min="300"
+                                                max="3000" step="100">
+                                        </label>
+                                    </div>
+                                    <div class="range__slider"></div>
+                                    <ul class="range__list">
+                                        <li class="range__item">300</li>
+                                        <li class="range__item">1,000</li>
+                                        <li class="range__item">1,500</li>
+                                        <li class="range__item">2,000</li>
+                                        <li class="range__item">2,500</li>
+                                        <li class="range__item">3,000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__filterbox">
+                            <p class="catalog__filterbox-title">
+                                SIZE
+                            </p>
+                            <div class="catalog__filterbox-items">
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    XS
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    S
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    M
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    L
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    XL
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    XXL
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__filterbox">
+                            <p class="catalog__filterbox-title">
+                                COLOR
+                            </p>
+                            <div class="catalog__filterbox-items">
+                                <label class="radio-label">
+                                    <input class="radio-box" type="radio">
+                                    <span class="radio-style"></span>
+                                    WHITE
+                                </label>
+                                <label class="radio-label">
+                                    <input class="radio-box" type="radio">
+                                    <span class="radio-style"></span>
+                                    IVORY
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__filterbox">
+                            <p class="catalog__filterbox-title">
+                                MATERIAL
+                            </p>
+                            <div class="catalog__filterbox-items">
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    LACE
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    SILK
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    CREPE
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    SATIN
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    EMBROIDERY
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    ECO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="catalog__filterbox">
+                            <p class="catalog__filterbox-title">
+                                STYLE
+                            </p>
+                            <div
+                                class="catalog__filterbox-items catalog__filterbox-items--line">
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    ALL
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    BOHO
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    ROMANTIC
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    ELEGANT
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    VINTAGE
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    SIMPLE
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    MODERN
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    FORMAL
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    PRINCESS
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    GLAMOROUS
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    MODEST
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    CASUAL
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    BEACH
+                                </label>
+                                <label class="checkbox-label">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    ELOPEMENT
+                                </label>
+                            </div>
+                        </div>
+                        <button class="catalog__filter-clean">
+                            CLEAN ALL
+                        </button>
+                    </form>
+                </aside>
+                <div class="catalog__content-box">
+                    <div
+                        class="catalog__content-items view-mode__container view-mode__container--grid">
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-1.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-1.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-1.jpg" width="270"
+                                    height="400"
+                                    alt="a form-fitting mermaid wedding dress with long sheer sleeves, an illusion neckline, and intricate floral lace embroidery trailing down the bodice">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-2.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-2.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-2.jpg" width="270"
+                                    height="400"
+                                    alt="an off-the-shoulder A-line wedding dress made of smooth, structured satin with a sweetheart neckline and a full pleated skirt">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-3.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-3.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-3.jpg" width="270"
+                                    height="400"
+                                    alt="a close-up view of a wedding dress featuring a sheer back and long sleeves adorned with delicate 3D floral lace appliques">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-4.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-4.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-4.jpg" width="270"
+                                    height="400"
+                                    alt="an elegant off-the-shoulder ball gown wedding dress with a long train, captured from behind as the bride looks out a tall window">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-5.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-5.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-5.jpg" width="270"
+                                    height="400"
+                                    alt="a modern high-neck wedding dress with long sleeves entirely covered in textured lace, featuring a subtle flare at the cuffs">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-6.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-6.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-6.jpg" width="270"
+                                    height="400"
+                                    alt="a minimalist strapless wedding dress with a sleek column silhouette and a dramatic detachable overskirt forming a long train">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-7.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-7.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-7.jpg" width="270"
+                                    height="400"
+                                    alt="an A-line wedding dress with a sheer long-sleeve bodice decorated with scattered 3D floral elements and a soft tulle skirt">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-8.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-8.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-8.jpg" width="270"
+                                    height="400"
+                                    alt="a rear view of an A-line wedding dress with a low scoop back, delicate straps, and a long cascading train on an outdoor pathway">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                        <div class="catalog__content-item">
+                            <picture>
+                                <source srcset="images/catalog-9.avif"
+                                    type="image/avif">
+                                <source srcset="images/catalog-9.webp"
+                                    type="image/webp">
+                                <img src="images/catalog-9.jpg" width="270"
+                                    height="400"
+                                    alt="a classic wedding dress with a structured satin skirt and a sheer lace bodice featuring long sleeves and a romantic sweetheart neckline">
+                            </picture>
+                            <p class="catalog__item-title">
+                                Blanca
+                            </p>
+                            <p class="catalog__item-price">
+                                € 1,850.00
+                            </p>
+                        </div>
+                    </div>
+                    <!--=include pagination.html  -->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->
