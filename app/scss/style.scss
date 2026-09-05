@@ -4,6 +4,7 @@
 @use "global";
 @use "../../node_modules/swiper/swiper-bundle.css";
 @use "../../node_modules/nouislider/dist/nouislider.css";
+@use "media";
 
 body {
   @extend %opensans-400;
@@ -40,8 +41,18 @@ body {
     margin-bottom: 15px;
   }
 
+ &__btn {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
   &__lang {
     display: flex;
+    margin-right: 215px;
+    padding-left: 0;
 
     &-link--active {
       @extend %opensans-700;
@@ -56,9 +67,12 @@ body {
 }
 
 .menu {
+  display: flex;
+
   &__list {
     display: flex;
     gap: 30px;
+    padding-left: 0;
   }
 }
 
@@ -102,6 +116,10 @@ body {
     margin-bottom: 5px;
   }
 
+  &__element-list {
+    padding-left: 0;
+  }
+
   &__social-list {
     display: flex;
     gap: 10px;
@@ -110,6 +128,7 @@ body {
   &__form {
     width: 250px;
     position: relative;
+    margin-bottom: 10px;
   }
 
   &__form-input {
@@ -155,7 +174,7 @@ body {
     gap: 0 37px;
   }
 
-  &__bottom-item + .footer__bottom-item {
+  &__bottom-item+.footer__bottom-item {
     position: relative;
 
     &::before {
@@ -227,7 +246,7 @@ body {
     color: vars.$text-muted;
   }
 
-  &__text + .new-collection__text {
+  &__text+.new-collection__text {
     margin-top: 25px;
   }
 
@@ -372,7 +391,7 @@ body {
     color: vars.$text-muted;
   }
 
-  &__text + .designer__text {
+  &__text+.designer__text {
     margin-top: 25px;
   }
 
@@ -627,7 +646,7 @@ body {
     position: relative;
   }
 
-  &__item + .breadcrumbs__item::before {
+  &__item+.breadcrumbs__item::before {
     content: "/";
     position: absolute;
     left: -9px;
@@ -920,7 +939,7 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
 
-  &:checked + .radio-style::before {
+  &:checked+.radio-style::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -950,7 +969,7 @@ body {
   clip: rect(0 0 0 0);
   padding-left: 20px;
 
-  &:checked + .check-style::before {
+  &:checked+.check-style::before {
     content: "";
     width: 9px;
     height: 9px;
@@ -1315,7 +1334,7 @@ body {
       }
     }
 
-    & > p {
+    &>p {
       margin-bottom: 40px;
       max-width: 1220px;
     }
@@ -1415,8 +1434,7 @@ body {
     width: calc(100vw - (100vw - 1500px) / 2);
   }
 
-  &__slider-wrapper {
-  }
+  &__slider-wrapper {}
 
   &__slider-addreview {
     display: inline-block;
@@ -1448,8 +1466,7 @@ body {
     margin-top: 18px;
   }
 
-  &__item-avatar-img {
-  }
+  &__item-avatar-img {}
 
   &__item-text {
     margin-bottom: 24px;
@@ -1496,7 +1513,7 @@ body {
       padding-right: 10px;
     }
 
-    span + span {
+    span+span {
       padding-left: 10px;
     }
   }
@@ -1558,8 +1575,7 @@ body {
     border: 1px solid vars.$text-muted;
   }
 
-  &__filter-form {
-  }
+  &__filter-form {}
 
   &__filter-clean {
     padding: 0;
@@ -1853,7 +1869,7 @@ body {
     width: 100%;
   }
 
-  &__info-item + .checkout__info-item {
+  &__info-item+.checkout__info-item {
     margin-top: 80px;
   }
 
@@ -1941,11 +1957,11 @@ body {
     justify-content: space-between;
   }
 
-  .radio-label:has(.radio-box:checked) + .checkout__info-delprice {
+  .radio-label:has(.radio-box:checked)+.checkout__info-delprice {
     opacity: 1;
   }
 
-  .radio-box:checked + .radio-style + .radio-name {
+  .radio-box:checked+.radio-style+.radio-name {
     opacity: 1;
   }
 
@@ -2129,3 +2145,5 @@ body {
     border: 1px solid vars.$text-accent;
   }
 }
+
+@media (max-width: 1000px) {}

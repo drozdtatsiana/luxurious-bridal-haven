@@ -1,3 +1,11 @@
+const headerBtn = document.querySelector('.header__btn');
+const menu = document.querySelector('.menu');
+
+
+headerBtn .addEventListener('click', ()=> {
+  menu.classList.toggle('menu--active');
+})
+
 const swiperReviews = new Swiper('.reviews__slider', {
   loop: true,
    slidesPerView: 8,
