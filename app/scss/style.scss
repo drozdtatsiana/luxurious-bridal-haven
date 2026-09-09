@@ -294,9 +294,14 @@ body {
   }
 
   &__img {
-    width: 100%;
-    max-width: fit-content;
+    max-width: 540px;
+ 
+    img {
+    object-fit: cover;
+    object-position: center top; 
+    
   }
+}
 
   &__box {
     padding: 40px 0 40px;
@@ -382,7 +387,7 @@ body {
     font-size: 45px;
     color: vars.$text-accent;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__text {
@@ -398,12 +403,16 @@ body {
   &__box {
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &__img {
     width: 100%;
     max-width: fit-content;
-    margin-bottom: 40px;
+    img {
+      object-fit: cover;
+    }
   }
 
   &__caption {
@@ -413,7 +422,7 @@ body {
     @extend %lora-400;
     color: vars.$text-primary;
     background-color: #fff;
-    max-width: 296px;
+    max-width: 340px;
     border: 3px solid vars.$bg-primary;
     padding: 20px 18px;
   }
@@ -424,6 +433,7 @@ body {
     padding: 10px 93px;
     border: 1px solid vars.$text-muted;
     color: vars.$text-muted;
+    margin-top: auto;
   }
 }
 
@@ -467,6 +477,7 @@ body {
   &__list {
     column-count: 2;
     column-gap: 80px;
+    padding: 0;
   }
 
   &__item {
@@ -527,6 +538,9 @@ body {
   &__img {
     width: 100%;
     max-width: fit-content;
+    img {
+      object-fit: cover;
+    }
   }
 
   &__box-right {
