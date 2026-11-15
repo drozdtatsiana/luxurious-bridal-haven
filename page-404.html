@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxurious Bridal Haven</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+<div class="promo">
+    <div class="container">
+        <p class="promo-text">
+            SAVE 10% OFF WHEN YOU
+            <a href="index.html#join-us">SIGN UP</a>
+        </p>
+    </div>
+</div>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <button class="header__btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <svg width="30" height="19" aria-hidden="true" focusable="false">
+          <use href="images/sprite.svg#mobile-btn"></use>
+        </svg>
+      </button>
+      <div class="header__logo">
+        <a class="logo" href="index.html" aria-label="Luxurious Bridal Haven, home page">
+          <img class="logo__img" src="images/logo.svg" width="245" height="52" alt="">
+        </a>
+      </div>
+      <nav class="menu" id="menu" aria-label="Main menu">
+        <ul class="header__lang">
+          <li class="header__lang-item">
+            <a href="#" class="header__lang-link header__lang-link--active" lang="en" aria-current="true">EN</a>
+          </li>
+          <li class="header__lang-item">
+            <a href="#" class="header__lang-link" lang="uk">UA</a>
+          </li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="catalog.html" class="menu__link">CATALOG</a></li>
+          <li class="menu__item"><a href="collection.html" class="menu__link">COLLECTIONS</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">ABOUT</a></li>
+          <li class="menu__item"><a href="appointment.html" class="menu__link">BOOK AN APPOINTMENT</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <ul class="header__actions">
+        <li class="header__actions-item">
+          <a href="#" class="header__actions-link" aria-label="Open user menu">
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__actions-item">
+          <a href="#" class="header__actions-link" aria-label="Go to wishlist">
+            <svg width="24" height="22" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#wishlist"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__actions-item">
+          <button class="header__actions-link open-modal" type="button" aria-label="Open shopping bag" aria-haspopup="dialog">
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#shopping-bag"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="modal" aria-hidden="true">
+  <div class="modal__overlay"></div>
+  <div class="modal__content" role="dialog" aria-modal="true" aria-label="Shopping bag">
+    <div class="checkout__details-items">
+      <div class="checkout__details-itemsline">
+        <p class="checkout__details-quantity">2 items in bag</p>
+        <button class="checkout__details-del close-modal" type="button" aria-label="Close shopping bag">
+          <svg width="18" height="18" aria-hidden="true" focusable="false">
+            <use href="images/sprite.svg#checkout-del"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="checkout__item">
+        <picture>
+          <source srcset="images/order-1.avif" type="image/avif">
+          <source srcset="images/order-1.webp" type="image/webp">
+          <img class="checkout__item-img" src="images/order-1.jpg" alt="Naomi wedding dress">
+        </picture>
+        <div class="checkout__item-box">
+          <p class="checkout__item-title">NAOMI</p>
+          <dl class="checkout__item-list">
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">SIZE:</dt>
+              <dd class="checkout__item-difinition">S</dd>
+            </div>
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">COLOR:</dt>
+              <dd class="checkout__item-difinition">IVORY</dd>
+            </div>
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">Item subtotal:</dt>
+              <dd class="checkout__item-difinition">€ 2,600</dd>
+            </div>
+          </dl>
+          <button class="checkout__item-del" type="button" aria-label="Remove Naomi from bag">
+            <svg width="16" height="20" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#item-del"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="checkout__item">
+        <picture>
+          <source srcset="images/order-2.avif" type="image/avif">
+          <source srcset="images/order-2.webp" type="image/webp">
+          <img class="checkout__item-img" src="images/order-2.jpg" alt="Sabine bridal shoes">
+        </picture>
+        <div class="checkout__item-box">
+          <p class="checkout__item-title">SABINE</p>
+          <dl class="checkout__item-list">
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">SIZE:</dt>
+              <dd class="checkout__item-difinition">38</dd>
+            </div>
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">COLOR:</dt>
+              <dd class="checkout__item-difinition">IVORY</dd>
+            </div>
+            <div class="checkout__item-listbox">
+              <dt class="checkout__item-term">Item subtotal:</dt>
+              <dd class="checkout__item-difinition">€ 200</dd>
+            </div>
+          </dl>
+          <button class="checkout__item-del" type="button" aria-label="Remove Sabine from bag">
+            <svg width="16" height="20" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#item-del"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="order">
+      <dl class="order__list">
+        <div class="order__list-box">
+          <dt class="order__list-term">Subtotal:</dt>
+          <dd class="order__list-difinition">€ 2,800</dd>
+        </div>
+        <div class="order__list-box">
+          <dt class="order__list-term">Shipping:</dt>
+          <dd class="order__list-difinition">FREE</dd>
+        </div>
+        <div class="order__list-box">
+          <dt class="order__list-term">Total:</dt>
+          <dd class="order__list-difinition">€ 2,800</dd>
+        </div>
+      </dl>
+      <div class="order__links">
+        <a class="order__link" href="catalog.html">KEEP SHOPPING</a>
+        <a class="order__link-now" href="checkout.html">BUY IT NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="main">
+    <div class="page-404">
+        <div class="page-404__container">
+            <div class="page-404__inner">
+                <picture class="page-404__picture">
+                    <source srcset="images/page-404-1.avif" type="image/avif">
+                    <source srcset="images/page-404-1.webp" type="image/webp">
+                    <img src="images/page-404-1.jpg" width="200" height="249"
+                        alt="bride wearing an off-the-shoulder wedding gown with textured ruffle sleeves">
+                </picture>
+                <div class="page-404__content">
+                    <h1 class="page-404__title">( 404 )</h1>
+                    <a href="index.html" class="page-404__link">
+                        <span> Return to the main page </span>
+                        <img src="images/sprite/image-404-decor.svg" alt="" />
+                    </a>
+                </div>
+                <picture>
+                    <source srcset="images/page-404-2.avif" type="image/avif">
+                    <source srcset="images/page-404-2.webp" type="image/webp">
+                    <img src="images/page-404-2.jpg" width="562" height="638"
+                        alt="model in an elegant long-sleeved lace wedding dress posing on stone steps">
+                </picture>
+            </div>
+        </div>
+        <div class="page-404__moving" aria-hidden="true">
+            <p class="page-404__moving-text">
+                PAGE NOT FOUND
+                <img src="images/moving-arrow.svg" alt="" />
+                PAGE NOT FOUND
+                <img src="images/moving-arrow.svg" alt="" />
+                PAGE NOT FOUND
+                <img src="images/moving-arrow.svg" alt="" />
+                PAGE NOT FOUND
+                <img src="images/moving-arrow.svg" alt="" />
+            </p>
+        </div>
+    </div>
+</main>
+<footer class="footer" id="contact">
+  <div class="container">
+    <nav class="footer__menu" aria-label="Footer menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="catalog.html" class="footer__menu-link">Catalog</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="collection.html" class="footer__menu-link">Collections</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="footer__menu-link">About</a>
+        </li>
+        <li class="footer__menu-item footer__menu-logo">
+          <a class="logo" href="index.html" aria-label="Luxurious Bridal Haven, home page">
+            <img class="logo__img" src="images/logo.svg" width="245" height="52" alt="">
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="appointment.html" class="footer__menu-link">Book your appointment</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#contact" class="footer__menu-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer__elements">
+      <div class="footer__element">
+        <p class="footer__element-title">Phones</p>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a href="tel:+380978367320" class="footer__element-link">+380 (97) 836 73 20</a>
+          </li>
+          <li class="footer__element-item">
+            <a href="tel:+380999846862" class="footer__element-link">+380 (99) 984 68 62</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+        <p class="footer__element-title">Emails</p>
+        <ul class="footer__element-list">
+          <li class="footer__element-item">
+            <a class="footer__element-link" href="mailto:office@luxuriousbridalhaven.com">
+              office@luxuriousbridalhaven.com</a>
+          </li>
+          <li class="footer__element-item">
+            <a class="footer__element-link"
+              href="mailto:sales@luxuriousbridalhaven.com">sales@luxuriousbridalhaven.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+        <p class="footer__element-title">Location</p>
+        <a class="footer__element-link" href="https://share.google/DTfMQCLSLjlTAgKbL" target="_blank" rel="noopener noreferrer">
+          Ukraine, Kyiv,<br>
+          st. Arsenalna, 5
+        </a>
+      </div>
+
+      <div class="footer__element footer__element--social">
+        <p class="footer__element-title">Social</p>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+        <p class="footer__element-title">Sign-up for our newsletter</p>
+        <form class="footer__form" action="#">
+          <label for="footerEmail" class="footer__form-label visually-hidden">Subscribe to our wedding dress newsletter</label>
+          <input class="footer__form-input" type="email" name="email" id="footerEmail" placeholder="Enter your email" autocomplete="email" required>
+          <button class="footer__form-btn" type="submit" aria-label="Subscribe">
+            <svg width="15" height="11" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#message"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p class="footer__copy">© Luxurious Bridal Haven. All rights reserved.</p>
+
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          </li>
+          <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Refund policy</a>
+          </li>
+          <li class="footer__bottom-item">
+            <a href="#" class="footer__bottom-link">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
