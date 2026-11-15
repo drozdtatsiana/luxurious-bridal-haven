@@ -4,27 +4,31 @@
 <main class="main">
     <section class="appointment">
         <div class="container">
-            <h2 class="appointment__title">BOOK AN APPOINTMENT</h2>
+            <h1 class="appointment__title">BOOK AN APPOINTMENT</h1>
             <div class="appointment__box">
                 <form action="#" class="appointment__form">
-                    <p class="appointment__form-title">CONTACT INFORMATHION</p>
+                    <p class="appointment__form-title">CONTACT INFORMATION</p>
                     <p class="appointment__form-text">Fill in your contact
                         details</p>
-                    <label class="visually-hidden" for="userName">first
+                    <label class="visually-hidden" for="userName">First
                         name</label>
                     <input class="appointment__input" type="text" name="name"
-                        id="userName" placeholder="First name">
-                    <label class="visually-hidden" for="userLastName">last
+                        id="userName" placeholder="First name"
+                        autocomplete="given-name" required>
+                    <label class="visually-hidden" for="userLastName">Last
                         name</label>
                     <input class="appointment__input" type="text"
                         name="lastName" id="userLastName"
-                        placeholder="Last name">
+                        placeholder="Last name" autocomplete="family-name"
+                        required>
                     <label class="visually-hidden" for="userEmail">Email</label>
                     <input class="appointment__input" type="email" name="email"
-                        id="userEmail" placeholder="Email">
+                        id="userEmail" placeholder="Email" autocomplete="email"
+                        required>
                     <label class="visually-hidden" for="userTel">Mobile</label>
                     <input class="appointment__input" type="tel" name="tel"
-                        id="userTel" placeholder="Mobile">
+                        id="userTel" placeholder="Mobile" autocomplete="tel"
+                        required>
                     <button class="appointment__btn" type="submit">SEND</button>
                 </form>
                 <picture class="appointment__image">

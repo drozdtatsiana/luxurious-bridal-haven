@@ -1,26 +1,26 @@
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="container">
-    <nav class="footer__menu">
+    <nav class="footer__menu" aria-label="Footer menu">
       <ul class="footer__menu-list">
         <li class="footer__menu-item">
-          <a href="#" class="footer__menu-link">Catalog</a>
+          <a href="catalog.html" class="footer__menu-link">Catalog</a>
         </li>
         <li class="footer__menu-item">
-          <a href="#" class="footer__menu-link">Collections</a>
+          <a href="collection.html" class="footer__menu-link">Collections</a>
         </li>
         <li class="footer__menu-item">
           <a href="#" class="footer__menu-link">About</a>
         </li>
         <li class="footer__menu-item footer__menu-logo">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" width="245" height="52" alt="logo">
+          <a class="logo" href="index.html" aria-label="Luxurious Bridal Haven, home page">
+            <img class="logo__img" src="images/logo.svg" width="245" height="52" alt="">
           </a>
         </li>
         <li class="footer__menu-item">
-          <a href="#" class="footer__menu-link">Book your appointment</a>
+          <a href="appointment.html" class="footer__menu-link">Book your appointment</a>
         </li>
         <li class="footer__menu-item">
-          <a href="#" class="footer__menu-link">Contact</a>
+          <a href="#contact" class="footer__menu-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -54,7 +54,7 @@
 
       <div class="footer__element">
         <p class="footer__element-title">Location</p>
-        <a class="footer__element-link" href="https://share.google/DTfMQCLSLjlTAgKbL">
+        <a class="footer__element-link" href="https://share.google/DTfMQCLSLjlTAgKbL" target="_blank" rel="noopener noreferrer">
           Ukraine, Kyiv,<br>
           st. Arsenalna, 5
         </a>
@@ -64,16 +64,16 @@
         <p class="footer__element-title">Social</p>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link" aria-label="link to facebook">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#facebook"></use>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="images/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link" aria-label="link to instagram">
-              <svg width="25" height="25">
-                <use xlink:href="images/sprite.svg#instagram"></use>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="images/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
@@ -83,11 +83,11 @@
       <div class="footer__element">
         <p class="footer__element-title">Sign-up for our newsletter</p>
         <form class="footer__form" action="#">
-          <label for="userEmail" class="footer__form-label visually-hidden">Subscribe to our wedding dress newsletter</label>
-          <input class="footer__form-input" type="email" name="email" id="userEmail" placeholder="Enter your email" >
-          <button class="footer__form-btn" type="submit" aria-label="submit">
-            <svg width="15" height="11">
-              <use xlink:href="images/sprite.svg#message"></use>
+          <label for="footerEmail" class="footer__form-label visually-hidden">Subscribe to our wedding dress newsletter</label>
+          <input class="footer__form-input" type="email" name="email" id="footerEmail" placeholder="Enter your email" autocomplete="email" required>
+          <button class="footer__form-btn" type="submit" aria-label="Subscribe">
+            <svg width="15" height="11" aria-hidden="true" focusable="false">
+              <use href="images/sprite.svg#message"></use>
             </svg>
           </button>
         </form>
@@ -99,7 +99,7 @@
   <div class="footer__bottom">
     <div class="container">
       <div class="footer__bottom-inner">
-        <p class="footer__copy">©Luxurious Bridal Haven. All rights reserved.</p>
+        <p class="footer__copy">© Luxurious Bridal Haven. All rights reserved.</p>
 
         <ul class="footer__bottom-list">
           <li class="footer__bottom-item">

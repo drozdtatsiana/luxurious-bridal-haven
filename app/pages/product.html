@@ -6,36 +6,44 @@
     <section class="product">
         <div class="container">
             <div class="product__inner">
-                <div class="product__images">
-                    <picture>
-                        <source srcset="images/product-1.avif"
-                            type="image/avif">
-                        <source srcset="images/product-1.webp"
-                            type="image/webp">
-                        <img src="images/product-1.jpg" width="219" height="369"
-                            alt="aline Naomi wedding dress with long lace sleeves and a high neckline, front view">
-                    </picture>
-                    <picture>
-                        <source srcset="images/product-2.avif"
-                            type="image/avif">
-                        <source srcset="images/product-2.webp"
-                            type="image/webp">
-                        <img src="images/product-2.jpg" width="483" height="757"
-                            alt="close-up of the back of the Naomi wedding dress featuring sheer lace details and a vertical row of buttons">
-                    </picture>
-                    <picture>
-                        <source srcset="images/product-3.avif"
-                            type="image/avif">
-                        <source srcset="images/product-3.webp"
-                            type="image/webp">
-                        <img src="images/product-3.jpg" width="219" height="369"
-                            alt="Bride wearing Naomi wedding dress with a long train, back view in an indoor setting">
-                    </picture>
+                <div class="slider-mobile">
+                    <div class="product__images swiper-wrapper">
+                        <picture class="swiper-slide">
+                            <source srcset="images/product-1.avif" type="image/avif">
+                            <source srcset="images/product-1.webp" type="image/webp">
+                            <img src="images/product-1.jpg" width="219" height="369"
+                                alt="aline Naomi wedding dress with long lace sleeves and a high neckline, front view">
+                        </picture>
+                        <picture class="swiper-slide">
+                            <source srcset="images/product-2.avif" type="image/avif">
+                            <source srcset="images/product-2.webp" type="image/webp">
+                            <img src="images/product-2.jpg" width="483" height="757"
+                                alt="close-up of the back of the Naomi wedding dress featuring sheer lace details and a vertical row of buttons">
+                        </picture>
+                        <picture class="swiper-slide">
+                            <source srcset="images/product-3.avif" type="image/avif">
+                            <source srcset="images/product-3.webp" type="image/webp">
+                            <img src="images/product-3.jpg" width="219" height="369"
+                                alt="Bride wearing Naomi wedding dress with a long train, back view in an indoor setting">
+                        </picture>
+                    </div>
+ <button class="product__arrow product__arrow--prev" type="button" aria-label="Previous image">
+                        <svg width="10" height="18">
+                            <use href="images/sprite.svg#arrow-left">
+                            </use>
+                        </svg>
+                    </button>
+                    <button class="product__arrow product__arrow--next" type="button" aria-label="Next image">
+                        <svg width="10" height="18">
+                            <use href="images/sprite.svg#arrow-right">
+                            </use>
+                        </svg>
+                    </button>
                 </div>
                 <div class="product__content">
-                    <h3 class="product__title">
+                    <h1 class="product__title">
                         NAOMI
-                    </h3>
+                    </h1>
                     <p class="product__price">
                         € 2,600
                     </p>
@@ -47,15 +55,14 @@
                             ICONIC COLLECTION
                         </dd>
                         <dt class="product__content-term">COLOR</dt>
-                        <dd
-                            class="product__content-difinition product__content-radio">
+                        <dd class="product__content-difinition product__content-radio">
                             <label class="radio-label">
-                                <input class="radio-box" type="radio">
+                                <input class="radio-box" type="radio" name="color">
                                 <span class="radio-style"></span>
                                 WHITE
                             </label>
                             <label class="radio-label">
-                                <input class="radio-box" type="radio">
+                                <input class="radio-box" type="radio" name="color">
                                 <span class="radio-style"></span>
                                 IVORY
                             </label>
@@ -80,8 +87,7 @@
                         <dt class="product__content-term">
                             SIZE
                         </dt>
-                        <dd
-                            class="product__content-difinition product__content-checkbox">
+                        <dd class="product__content-difinition product__content-checkbox">
                             <label class="checkbox-label">
                                 <input class="check-box" type="checkbox">
                                 <span class="check-style"></span>
@@ -115,21 +121,21 @@
                         </dd>
                     </dl>
                     <div class="product__buttons">
-                        <button class="product__btn-sizegiude product__btn">
+                        <button class="product__btn-sizegiude product__btn" type="button">
                             <svg width="17" height="16">
-                                <use xlink:href="images/sprite.svg#icon-size">
+                                <use href="images/sprite.svg#icon-size">
                                 </use>
                             </svg>
-                            Size giude
+                            Size guide
                         </button>
-                        <button class="product__btn-favorites product__btn">
+                        <button class="product__btn-favorites product__btn" type="button">
                             <svg width="16" height="15">
-                                <use xlink:href="images/sprite.svg#icon-heart">
+                                <use href="images/sprite.svg#icon-heart">
                                 </use>
                             </svg>
                             Favorites
                         </button>
-                        <button class="product__btn-addtobag product__btn">
+                        <button class="product__btn-addtobag product__btn" type="button">
                             ADD TO BAG
                         </button>
                     </div>
@@ -140,20 +146,15 @@
     <section class="accessories">
         <div class="container">
             <div class="accessories__inner">
-                <img class="accessories__decor"
-                    src="images/sprite/accessories-decor.svg" alt="decor">
+                <img class="accessories__decor" src="images/sprite/accessories-decor.svg" alt="">
                 <h2 class="accessories__title">ACCESSORIES</h2>
                 <div class="accessories__slider">
                     <div class="accessories__slider-wrapper swiper-wrapper">
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-1.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-1.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-1.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-1.avif" type="image/avif">
+                                <source srcset="images/slide-1.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-1.jpg" width="270" height="400"
                                     alt="Elegant beige bridal high heel shoes on a silk fabric">
                             </picture>
                             <p class="accessories__slide-title">Sabine</p>
@@ -161,13 +162,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-2.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-2.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-2.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-2.avif" type="image/avif">
+                                <source srcset="images/slide-2.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-2.jpg" width="270" height="400"
                                     alt="Close-up of classic pointed-toe wedding pumps in cream color resting on folded satin">
                             </picture>
                             <p class="accessories__slide-title">Fleur veil</p>
@@ -175,13 +172,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-3.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-3.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-3.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-3.avif" type="image/avif">
+                                <source srcset="images/slide-3.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-3.jpg" width="270" height="400"
                                     alt="Bride wearing a delicate tulle wedding veil with a hairpiece">
                             </picture>
                             <p class="accessories__slide-title">Wedding garter
@@ -190,12 +183,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-1.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-1.webp"
-                                    type="image/webp">
-                                <img src="images/slide-1.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-1.avif" type="image/avif">
+                                <source srcset="images/slide-1.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-1.jpg" width="270" height="400"
                                     alt="Elegant beige bridal high heel shoes on a silk fabric">
                             </picture>
                             <p class="accessories__slide-title">Sabine</p>
@@ -203,12 +193,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-2.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-2.webp"
-                                    type="image/webp">
-                                <img src="images/slide-2.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-2.avif" type="image/avif">
+                                <source srcset="images/slide-2.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-2.jpg" width="270" height="400"
                                     alt="Close-up of classic pointed-toe wedding pumps in cream color resting on folded satin">
                             </picture>
                             <p class="accessories__slide-title">Fleur veil</p>
@@ -216,13 +203,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-3.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-3.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-3.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-3.avif" type="image/avif">
+                                <source srcset="images/slide-3.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-3.jpg" width="270" height="400"
                                     alt="Bride wearing a delicate tulle wedding veil with a hairpiece">
                             </picture>
                             <p class="accessories__slide-title">Wedding garter
@@ -231,12 +214,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-1.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-1.webp"
-                                    type="image/webp">
-                                <img src="images/slide-1.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-1.avif" type="image/avif">
+                                <source srcset="images/slide-1.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-1.jpg" width="270" height="400"
                                     alt="Elegant beige bridal high heel shoes on a silk fabric">
                             </picture>
                             <p class="accessories__slide-title">Sabine</p>
@@ -244,12 +224,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-2.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-2.webp"
-                                    type="image/webp">
-                                <img src="images/slide-2.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-2.avif" type="image/avif">
+                                <source srcset="images/slide-2.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-2.jpg" width="270" height="400"
                                     alt="Close-up of classic pointed-toe wedding pumps in cream color resting on folded satin">
                             </picture>
                             <p class="accessories__slide-title">Fleur veil</p>
@@ -257,13 +234,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-3.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-3.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-3.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-3.avif" type="image/avif">
+                                <source srcset="images/slide-3.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-3.jpg" width="270" height="400"
                                     alt="Bride wearing a delicate tulle wedding veil with a hairpiece">
                             </picture>
                             <p class="accessories__slide-title">Wedding garter
@@ -272,12 +245,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-1.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-1.webp"
-                                    type="image/webp">
-                                <img src="images/slide-1.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-1.avif" type="image/avif">
+                                <source srcset="images/slide-1.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-1.jpg" width="270" height="400"
                                     alt="Elegant beige bridal high heel shoes on a silk fabric">
                             </picture>
                             <p class="accessories__slide-title">Sabine</p>
@@ -285,12 +255,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-2.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-2.webp"
-                                    type="image/webp">
-                                <img src="images/slide-2.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-2.avif" type="image/avif">
+                                <source srcset="images/slide-2.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-2.jpg" width="270" height="400"
                                     alt="Close-up of classic pointed-toe wedding pumps in cream color resting on folded satin">
                             </picture>
                             <p class="accessories__slide-title">Fleur veil</p>
@@ -298,13 +265,9 @@
                         </div>
                         <div class="accessories__slide swiper-slide">
                             <picture>
-                                <source srcset="images/slide-3.avif"
-                                    type="image/avif">
-                                <source srcset="images/slide-3.webp"
-                                    type="image/webp">
-                                <img class="accessories__slide-img"
-                                    src="images/slide-3.jpg" width="270"
-                                    height="400"
+                                <source srcset="images/slide-3.avif" type="image/avif">
+                                <source srcset="images/slide-3.webp" type="image/webp">
+                                <img class="accessories__slide-img" src="images/slide-3.jpg" width="270" height="400"
                                     alt="Bride wearing a delicate tulle wedding veil with a hairpiece">
                             </picture>
                             <p class="accessories__slide-title">Wedding garter
@@ -312,18 +275,18 @@
                             <p class="accessories__slide-price">€ 50.00</p>
                         </div>
                     </div>
-                    <div class="accessories__arrow accessories__arrow--prev">
+                    <button class="accessories__arrow accessories__arrow--prev" type="button" aria-label="Previous slide">
                         <svg width="10" height="18">
-                            <use xlink:href="images/sprite.svg#arrow-left">
+                            <use href="images/sprite.svg#arrow-left">
                             </use>
                         </svg>
-                    </div>
-                    <div class="accessories__arrow accessories__arrow--next">
+                    </button>
+                    <button class="accessories__arrow accessories__arrow--next" type="button" aria-label="Next slide">
                         <svg width="10" height="18">
-                            <use xlink:href="images/sprite.svg#arrow-right">
+                            <use href="images/sprite.svg#arrow-right">
                             </use>
                         </svg>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
